@@ -1,0 +1,9 @@
+Interface->IPascal
+Class->Pascal
+Property->Pascal
+Field->_camel
+Method->Pascal
+Parameter->camel
+Variable->camel
+Use Internal Field Property Or Method ->this.Property  this._field  this.Method() 
+Use Base Field Property Or Method ->base.Property  base._field  base.Method() 

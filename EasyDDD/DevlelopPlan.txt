@@ -1,0 +1,6 @@
+1.开发EasyDDD.Core类库
+.Aggregate
+.Repostory
+
+?:Base36编码相对于guid来说的优势在哪里
+-->有序的Id在新增数据时维护索引二叉树的平衡代价较小
