@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C50B9E72-C880-4D4B-8DDA-E787D76C8B59}</ProjectGuid>
+    <ProjectGuid>{4957EB7E-86DF-4471-9343-0DF0E6C20378}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EasyDDD.Core</RootNamespace>
-    <AssemblyName>EasyDDD.Core</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>EasyDDD.Infrastructure.Crosscutting</RootNamespace>
+    <AssemblyName>EasyDDD.Infrastructure.Crosscutting</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -39,36 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aggregate\AggregateRoot.cs" />
-    <Compile Include="Aggregate\IAggregateRoot.cs" />
-    <Compile Include="Aggregate\IEntity.cs" />
-    <Compile Include="IdGenerator\IdentityGeneratorFactory.cs" />
-    <Compile Include="IdGenerator\IIdentityGenerator.cs" />
+    <Compile Include="InversionOfControl\IDependencyResolver.cs" />
+    <Compile Include="InversionOfControl\IoC.cs" />
+    <Compile Include="Paged\PagedParameter.cs" />
+    <Compile Include="Paged\PagedResult.cs" />
+    <Compile Include="Paged\SortOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\IRepository.cs" />
-    <Compile Include="Specification\AndNotSpecification.cs" />
-    <Compile Include="Specification\AndSpecification.cs" />
-    <Compile Include="Specification\AnySpecification.cs" />
-    <Compile Include="Specification\CompositeSpecification.cs" />
-    <Compile Include="Specification\ExpressionFuncExtender.cs" />
-    <Compile Include="Specification\ExpressionSpecification.cs" />
-    <Compile Include="Specification\ICompositeSpecification.cs" />
-    <Compile Include="Specification\ISpecification.cs" />
-    <Compile Include="Specification\ISpecificationParser.cs" />
-    <Compile Include="Specification\NoneSpecification.cs" />
-    <Compile Include="Specification\NotSpecification.cs" />
-    <Compile Include="Specification\OrSpecification.cs" />
-    <Compile Include="Specification\ParameterRebinder.cs" />
-    <Compile Include="Specification\Specification.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="IdGenerator\Base36Id\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EasyDDD.Infrastructure.Crosscutting\EasyDDD.Infrastructure.Crosscutting.csproj">
-      <Project>{4957eb7e-86df-4471-9343-0df0e6c20378}</Project>
-      <Name>EasyDDD.Infrastructure.Crosscutting</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

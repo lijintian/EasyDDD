@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EasyDDD.Core", "EasyDDD.Core", "{FD64240A-ACFA-4A7D-9963-7CE6216A3FD6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDDD.Core", "EasyDDD.Core\EasyDDD.Core.csproj", "{C50B9E72-C880-4D4B-8DDA-E787D76C8B59}"
@@ -10,6 +12,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		CodeStandard.txt = CodeStandard.txt
 		DevlelopPlan.txt = DevlelopPlan.txt
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EasyDDD.Infrastructure", "EasyDDD.Infrastructure", "{984A9655-7FF8-4323-8763-E210FD6B603F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Crosscutting", "Crosscutting", "{57ADC367-81F9-4F30-9C2B-489207276267}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDDD.Infrastructure.Crosscutting", "EasyDDD.Infrastructure.Crosscutting\EasyDDD.Infrastructure.Crosscutting.csproj", "{4957EB7E-86DF-4471-9343-0DF0E6C20378}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,11 +29,17 @@ Global
 		{C50B9E72-C880-4D4B-8DDA-E787D76C8B59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C50B9E72-C880-4D4B-8DDA-E787D76C8B59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C50B9E72-C880-4D4B-8DDA-E787D76C8B59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4957EB7E-86DF-4471-9343-0DF0E6C20378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4957EB7E-86DF-4471-9343-0DF0E6C20378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4957EB7E-86DF-4471-9343-0DF0E6C20378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4957EB7E-86DF-4471-9343-0DF0E6C20378}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C50B9E72-C880-4D4B-8DDA-E787D76C8B59} = {FD64240A-ACFA-4A7D-9963-7CE6216A3FD6}
+		{57ADC367-81F9-4F30-9C2B-489207276267} = {984A9655-7FF8-4323-8763-E210FD6B603F}
+		{4957EB7E-86DF-4471-9343-0DF0E6C20378} = {57ADC367-81F9-4F30-9C2B-489207276267}
 	EndGlobalSection
 EndGlobal

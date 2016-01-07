@@ -9,7 +9,7 @@ namespace EasyDDD.Core.Aggregate
     /// <summary>
     /// 聚合根接口
     /// </summary>
-    public class IAggregateRoot
+    public interface IAggregateRoot:IEntity
     {
     }
 }
