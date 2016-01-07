@@ -1,7 +1,7 @@
---¿ª·¢EasyDDD.CoreÀà¿â
-.Aggregate ÒµÎñ¾ÛºÏ¸ù
-.Repostory ½«Aggregate³Ö¾Ã»¯µ½Êý¾Ý¿â
-.Specification ¸ù¾ÝSpecificationÉú³ÉÊµ¼Ê²Ö´¢µÄÌõ¼þÈç SQLServer Éú³ÉsqlÌõ¼þ  Mongodb Éú³ÉmongoÌõ¼þ
+--å¼€å‘EasyDDD.Coreç±»åº“
+.Aggregate ä¸šåŠ¡èšåˆæ ¹
+.Repostory å°†AggregateæŒä¹…åŒ–åˆ°æ•°æ®åº“
+.Specification æ ¹æ®Specificationç”Ÿæˆå®žé™…ä»“å‚¨çš„æ¡ä»¶å¦‚ SQLServer ç”Ÿæˆsqlæ¡ä»¶  Mongodb ç”Ÿæˆmongoæ¡ä»¶
 
-?:Base36±àÂëÏà¶ÔÓÚguidÀ´ËµµÄÓÅÊÆÔÚÄÄÀï
--->ÓÐÐòµÄIdÔÚÐÂÔöÊý¾ÝÊ±Î¬»¤Ë÷Òý¶þ²æÊ÷µÄÆ½ºâ´ú¼Û½ÏÐ¡
+?:Base36ç¼–ç ç›¸å¯¹äºŽguidæ¥è¯´çš„ä¼˜åŠ¿åœ¨å“ªé‡Œ
+-->æœ‰åºçš„Idåœ¨æ–°å¢žæ•°æ®æ—¶ç»´æŠ¤ç´¢å¼•äºŒå‰æ ‘çš„å¹³è¡¡ä»£ä»·è¾ƒå°
