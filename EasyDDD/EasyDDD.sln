@@ -19,6 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Crosscutting", "Crosscuttin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDDD.Infrastructure.Crosscutting", "EasyDDD.Infrastructure.Crosscutting\EasyDDD.Infrastructure.Crosscutting.csproj", "{4957EB7E-86DF-4471-9343-0DF0E6C20378}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{79590C4C-F8D9-48C3-B29E-92BCE4D44FA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDDD.Infrastructure.Data.MongoDB", "EasyDDD.Infrastructure.MongoDB\EasyDDD.Infrastructure.Data.MongoDB.csproj", "{ECC89F55-1AC4-408B-BA80-F9009A32B128}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,10 @@ Global
 		{4957EB7E-86DF-4471-9343-0DF0E6C20378}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4957EB7E-86DF-4471-9343-0DF0E6C20378}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4957EB7E-86DF-4471-9343-0DF0E6C20378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC89F55-1AC4-408B-BA80-F9009A32B128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC89F55-1AC4-408B-BA80-F9009A32B128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC89F55-1AC4-408B-BA80-F9009A32B128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC89F55-1AC4-408B-BA80-F9009A32B128}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,5 +49,7 @@ Global
 		{C50B9E72-C880-4D4B-8DDA-E787D76C8B59} = {FD64240A-ACFA-4A7D-9963-7CE6216A3FD6}
 		{57ADC367-81F9-4F30-9C2B-489207276267} = {984A9655-7FF8-4323-8763-E210FD6B603F}
 		{4957EB7E-86DF-4471-9343-0DF0E6C20378} = {57ADC367-81F9-4F30-9C2B-489207276267}
+		{79590C4C-F8D9-48C3-B29E-92BCE4D44FA2} = {984A9655-7FF8-4323-8763-E210FD6B603F}
+		{ECC89F55-1AC4-408B-BA80-F9009A32B128} = {79590C4C-F8D9-48C3-B29E-92BCE4D44FA2}
 	EndGlobalSection
 EndGlobal

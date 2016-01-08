@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C50B9E72-C880-4D4B-8DDA-E787D76C8B59}</ProjectGuid>
+    <ProjectGuid>{ECC89F55-1AC4-408B-BA80-F9009A32B128}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EasyDDD.Core</RootNamespace>
-    <AssemblyName>EasyDDD.Core</AssemblyName>
+    <RootNamespace>EasyDDD.Infrastructure.Data.MongoDB</RootNamespace>
+    <AssemblyName>EasyDDD.Infrastructure.Data.MongoDB</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,9 +30,31 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ImpromptuInterface, Version=5.6.7.12678, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ImpromptuInterface.5.6.7\lib\net40\ImpromptuInterface.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.2.0.262, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.2.0\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.2.0.262, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.2.0\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.2.0.262, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.2.0\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Legacy, Version=2.2.0.262, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\mongocsharpdriver.2.2.0\lib\net45\MongoDB.Driver.Legacy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -39,33 +63,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aggregate\AggregateRoot.cs" />
-    <Compile Include="Aggregate\IAggregateRoot.cs" />
-    <Compile Include="Aggregate\IEntity.cs" />
-    <Compile Include="IdGenerator\IdentityGeneratorFactory.cs" />
-    <Compile Include="IdGenerator\IIdentityGenerator.cs" />
-    <Compile Include="IMapping.cs" />
+    <Compile Include="IMongoDBRepositoryContext.cs" />
+    <Compile Include="MongoDBBootstrapper.cs" />
+    <Compile Include="MongoDBRepository.cs" />
+    <Compile Include="MongoDBRepositoryContext.cs" />
+    <Compile Include="MongoDBStringObjectIdGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\IRepository.cs" />
-    <Compile Include="Repository\IRepositoryContext.cs" />
-    <Compile Include="Repository\RepositoryContext.cs" />
-    <Compile Include="Specification\AndNotSpecification.cs" />
-    <Compile Include="Specification\AndSpecification.cs" />
-    <Compile Include="Specification\AnySpecification.cs" />
-    <Compile Include="Specification\CompositeSpecification.cs" />
-    <Compile Include="Specification\ExpressionFuncExtender.cs" />
-    <Compile Include="Specification\ExpressionSpecification.cs" />
-    <Compile Include="Specification\ICompositeSpecification.cs" />
-    <Compile Include="Specification\ISpecification.cs" />
-    <Compile Include="Specification\ISpecificationParser.cs" />
-    <Compile Include="Specification\NoneSpecification.cs" />
-    <Compile Include="Specification\NotSpecification.cs" />
-    <Compile Include="Specification\OrSpecification.cs" />
-    <Compile Include="Specification\ParameterRebinder.cs" />
-    <Compile Include="Specification\Specification.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EasyDDD.Core\EasyDDD.Core.csproj">
+      <Project>{c50b9e72-c880-4d4b-8dda-e787d76c8b59}</Project>
+      <Name>EasyDDD.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EasyDDD.Infrastructure.Crosscutting\EasyDDD.Infrastructure.Crosscutting.csproj">
       <Project>{4957eb7e-86df-4471-9343-0df0e6c20378}</Project>
       <Name>EasyDDD.Infrastructure.Crosscutting</Name>

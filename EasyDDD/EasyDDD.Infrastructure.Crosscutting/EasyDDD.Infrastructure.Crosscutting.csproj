@@ -40,6 +40,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DisposableObject.cs" />
+    <Compile Include="Helpers\Check.cs" />
+    <Compile Include="Helpers\CheckResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CheckResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\StringExtension.cs" />
     <Compile Include="InversionOfControl\IDependencyResolver.cs" />
     <Compile Include="InversionOfControl\IoC.cs" />
     <Compile Include="IUnitOfWork.cs" />
@@ -47,6 +54,12 @@
     <Compile Include="Paged\PagedResult.cs" />
     <Compile Include="Paged\SortOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Helpers\CheckResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CheckResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
