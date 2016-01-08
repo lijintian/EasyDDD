@@ -73,6 +73,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="config\unity.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
