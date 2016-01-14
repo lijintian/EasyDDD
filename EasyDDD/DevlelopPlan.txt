@@ -2,6 +2,7 @@
 .Aggregate 业务聚合根
 .Repostory 将Aggregate持久化到数据库
 .Specification 根据Specification生成实际仓储的条件如 SQLServer 生成sql条件  Mongodb 生成mongo条件  Decorator 装饰者模式
+.EF Repostory实现
 todo:DomainEvent
 todo:制作Nuget包
 

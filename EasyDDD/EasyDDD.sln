@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleDemo", "ConsoleDemo\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDDD.Infrastructure.Crosscutting.Ioc.Unity", "EasyDDD.Infrastructure.Crosscutting.Ioc.Unity\EasyDDD.Infrastructure.Crosscutting.Ioc.Unity.csproj", "{02A72AE2-A9E0-459E-94AE-102FCE67E537}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDDD.Infrastructure.Data.EntityFramework", "EasyDDD.Infrastructure.Data.EntityFramework\EasyDDD.Infrastructure.Data.EntityFramework.csproj", "{44D371F5-D248-4823-A682-F16D640B918F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{02A72AE2-A9E0-459E-94AE-102FCE67E537}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02A72AE2-A9E0-459E-94AE-102FCE67E537}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02A72AE2-A9E0-459E-94AE-102FCE67E537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44D371F5-D248-4823-A682-F16D640B918F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44D371F5-D248-4823-A682-F16D640B918F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44D371F5-D248-4823-A682-F16D640B918F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44D371F5-D248-4823-A682-F16D640B918F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,5 +70,6 @@ Global
 		{79590C4C-F8D9-48C3-B29E-92BCE4D44FA2} = {984A9655-7FF8-4323-8763-E210FD6B603F}
 		{ECC89F55-1AC4-408B-BA80-F9009A32B128} = {79590C4C-F8D9-48C3-B29E-92BCE4D44FA2}
 		{02A72AE2-A9E0-459E-94AE-102FCE67E537} = {57ADC367-81F9-4F30-9C2B-489207276267}
+		{44D371F5-D248-4823-A682-F16D640B918F} = {79590C4C-F8D9-48C3-B29E-92BCE4D44FA2}
 	EndGlobalSection
 EndGlobal
