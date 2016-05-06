@@ -42,6 +42,11 @@
     <Compile Include="Aggregate\AggregateRoot.cs" />
     <Compile Include="Aggregate\IAggregateRoot.cs" />
     <Compile Include="Aggregate\IEntity.cs" />
+    <Compile Include="Event\DomainEvent.cs" />
+    <Compile Include="Event\DomainEventResult.cs" />
+    <Compile Include="Event\IDomainEvent.cs" />
+    <Compile Include="Event\IDomainEventHandler.cs" />
+    <Compile Include="Event\IDomainEventResult.cs" />
     <Compile Include="IdGenerator\IdentityGeneratorFactory.cs" />
     <Compile Include="IdGenerator\IIdentityGenerator.cs" />
     <Compile Include="IMapping.cs" />

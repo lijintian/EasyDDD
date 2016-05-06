@@ -43,6 +43,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DisposableObject.cs" />
+    <Compile Include="Event\ActionDelegatedEventHandler.cs" />
+    <Compile Include="Event\AsyncEventHandleAttribute.cs" />
+    <Compile Include="Event\DefaultEventBus.cs" />
+    <Compile Include="Event\EventAggregator.cs" />
+    <Compile Include="Event\IEvent.cs" />
+    <Compile Include="Event\IEventAggregator.cs" />
+    <Compile Include="Event\IEventBus.cs" />
+    <Compile Include="Event\IEventHandler.cs" />
+    <Compile Include="Exception\ExceptionBase.cs" />
     <Compile Include="Helpers\Check.cs" />
     <Compile Include="Helpers\CheckResources.Designer.cs">
       <AutoGen>True</AutoGen>
