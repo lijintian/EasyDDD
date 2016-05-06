@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,6 +67,11 @@
     <Compile Include="Paged\PagedResult.cs" />
     <Compile Include="Paged\SortOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaction\DistributedTransactionCoordinator.cs" />
+    <Compile Include="Transaction\ITransactionCoordinator.cs" />
+    <Compile Include="Transaction\SuppressedTransactionCoordinator.cs" />
+    <Compile Include="Transaction\TransactionCoordinator.cs" />
+    <Compile Include="Transaction\TransactionCoordinatorFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Helpers\CheckResources.resx">
