@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caching\CacheManager.cs" />
+    <Compile Include="Caching\ICache.cs" />
     <Compile Include="DisposableObject.cs" />
     <Compile Include="Event\ActionDelegatedEventHandler.cs" />
     <Compile Include="Event\AsyncEventHandleAttribute.cs" />
@@ -53,16 +55,25 @@
     <Compile Include="Event\IEventBus.cs" />
     <Compile Include="Event\IEventHandler.cs" />
     <Compile Include="Exception\ExceptionBase.cs" />
+    <Compile Include="Helpers\AssemblyExtension.cs" />
     <Compile Include="Helpers\Check.cs" />
     <Compile Include="Helpers\CheckResources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CheckResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\DataValidator.cs" />
+    <Compile Include="Helpers\DateTimeExtenion.cs" />
+    <Compile Include="Helpers\MemoryPaged.cs" />
+    <Compile Include="Helpers\RegexHelper.cs" />
     <Compile Include="Helpers\StringExtension.cs" />
     <Compile Include="InversionOfControl\IDependencyResolver.cs" />
     <Compile Include="InversionOfControl\IoC.cs" />
     <Compile Include="IUnitOfWork.cs" />
+    <Compile Include="Json\IJson.cs" />
+    <Compile Include="Json\JsonManager.cs" />
+    <Compile Include="Logging\ILog.cs" />
+    <Compile Include="Logging\Log.cs" />
     <Compile Include="Paged\PagedParameter.cs" />
     <Compile Include="Paged\PagedResult.cs" />
     <Compile Include="Paged\SortOrder.cs" />

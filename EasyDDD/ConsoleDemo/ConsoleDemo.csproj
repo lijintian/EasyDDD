@@ -95,6 +95,10 @@
       <Project>{4957eb7e-86df-4471-9343-0df0e6c20378}</Project>
       <Name>EasyDDD.Infrastructure.Crosscutting</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EasyDDD.Infrastructure.Data.EntityFramework\EasyDDD.Infrastructure.Data.EntityFramework.csproj">
+      <Project>{44d371f5-d248-4823-a682-f16d640b918f}</Project>
+      <Name>EasyDDD.Infrastructure.Data.EntityFramework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EasyDDD.Infrastructure.MongoDB\EasyDDD.Infrastructure.Data.MongoDB.csproj">
       <Project>{ecc89f55-1ac4-408b-ba80-f9009a32b128}</Project>
       <Name>EasyDDD.Infrastructure.Data.MongoDB</Name>
