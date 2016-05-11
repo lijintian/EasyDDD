@@ -87,9 +87,25 @@
       <Project>{c50b9e72-c880-4d4b-8dda-e787d76c8b59}</Project>
       <Name>EasyDDD.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EasyDDD.Infrastructure.Crosscutting.Adapter.AutoMapper\EasyDDD.Infrastructure.Crosscutting.Adapter.AutoMapper.csproj">
+      <Project>{258b0be0-d4aa-4a93-9163-2bb81ca279cc}</Project>
+      <Name>EasyDDD.Infrastructure.Crosscutting.Adapter.AutoMapper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyDDD.Infrastructure.Crosscutting.Caching.Memcached\EasyDDD.Infrastructure.Crosscutting.Caching.Memcached.csproj">
+      <Project>{f69874dd-d80e-4777-9cc6-2a6d9dd78e2d}</Project>
+      <Name>EasyDDD.Infrastructure.Crosscutting.Caching.Memcached</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EasyDDD.Infrastructure.Crosscutting.Ioc.Unity\EasyDDD.Infrastructure.Crosscutting.Ioc.Unity.csproj">
       <Project>{02a72ae2-a9e0-459e-94ae-102fce67e537}</Project>
       <Name>EasyDDD.Infrastructure.Crosscutting.Ioc.Unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyDDD.Infrastructure.Crosscutting.Json.ServiceStackText\EasyDDD.Infrastructure.Crosscutting.Json.ServiceStackText.csproj">
+      <Project>{696f9e35-a677-4090-a1dc-7b103a6cd5cf}</Project>
+      <Name>EasyDDD.Infrastructure.Crosscutting.Json.ServiceStackText</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EasyDDD.Infrastructure.Crosscutting.Logging.log4net\EasyDDD.Infrastructure.Crosscutting.Logging.log4net.csproj">
+      <Project>{32505b5a-9a0d-46cf-b3b8-8e40023bf3dc}</Project>
+      <Name>EasyDDD.Infrastructure.Crosscutting.Logging.log4net</Name>
     </ProjectReference>
     <ProjectReference Include="..\EasyDDD.Infrastructure.Crosscutting\EasyDDD.Infrastructure.Crosscutting.csproj">
       <Project>{4957eb7e-86df-4471-9343-0df0e6c20378}</Project>
