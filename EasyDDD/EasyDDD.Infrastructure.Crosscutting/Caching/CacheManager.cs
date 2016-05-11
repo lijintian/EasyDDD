@@ -5,10 +5,9 @@ using System.Linq;
 using System.Runtime.Remoting.Channels;
 using System.Text;
 using System.Threading.Tasks;
-using CK1.Framework.Infrastructure.Crosscutting.Caching;
 using EasyDDD.Infrastructure.Crosscutting.InversionOfControl;
 
-namespace EasyDDD.Infrastructure.Crosscutting
+namespace EasyDDD.Infrastructure.Crosscutting.Caching
 {
     public static class CacheManager
     {

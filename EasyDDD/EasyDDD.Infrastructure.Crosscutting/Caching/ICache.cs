@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CK1.Framework.Infrastructure.Crosscutting.Caching
+namespace EasyDDD.Infrastructure.Crosscutting.Caching
 {
     public interface ICache
     {

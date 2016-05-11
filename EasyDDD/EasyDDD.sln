@@ -29,6 +29,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDDD.Infrastructure.Cros
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDDD.Infrastructure.Data.EntityFramework", "EasyDDD.Infrastructure.Data.EntityFramework\EasyDDD.Infrastructure.Data.EntityFramework.csproj", "{44D371F5-D248-4823-A682-F16D640B918F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDDD.Infrastructure.Crosscutting.Json.ServiceStackText", "EasyDDD.Infrastructure.Crosscutting.Json.ServiceStackText\EasyDDD.Infrastructure.Crosscutting.Json.ServiceStackText.csproj", "{696F9E35-A677-4090-A1DC-7B103A6CD5CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDDD.Infrastructure.Crosscutting.Logging.log4net", "EasyDDD.Infrastructure.Crosscutting.Logging.log4net\EasyDDD.Infrastructure.Crosscutting.Logging.log4net.csproj", "{32505B5A-9A0D-46CF-B3B8-8E40023BF3DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDDD.Infrastructure.Crosscutting.Caching.Memcached", "EasyDDD.Infrastructure.Crosscutting.Caching.Memcached\EasyDDD.Infrastructure.Crosscutting.Caching.Memcached.csproj", "{F69874DD-D80E-4777-9CC6-2A6D9DD78E2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDDD.Infrastructure.Crosscutting.Adapter.AutoMapper", "EasyDDD.Infrastructure.Crosscutting.Adapter.AutoMapper\EasyDDD.Infrastructure.Crosscutting.Adapter.AutoMapper.csproj", "{258B0BE0-D4AA-4A93-9163-2BB81CA279CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +67,22 @@ Global
 		{44D371F5-D248-4823-A682-F16D640B918F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44D371F5-D248-4823-A682-F16D640B918F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44D371F5-D248-4823-A682-F16D640B918F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696F9E35-A677-4090-A1DC-7B103A6CD5CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696F9E35-A677-4090-A1DC-7B103A6CD5CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696F9E35-A677-4090-A1DC-7B103A6CD5CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696F9E35-A677-4090-A1DC-7B103A6CD5CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32505B5A-9A0D-46CF-B3B8-8E40023BF3DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32505B5A-9A0D-46CF-B3B8-8E40023BF3DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32505B5A-9A0D-46CF-B3B8-8E40023BF3DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32505B5A-9A0D-46CF-B3B8-8E40023BF3DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F69874DD-D80E-4777-9CC6-2A6D9DD78E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F69874DD-D80E-4777-9CC6-2A6D9DD78E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F69874DD-D80E-4777-9CC6-2A6D9DD78E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F69874DD-D80E-4777-9CC6-2A6D9DD78E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{258B0BE0-D4AA-4A93-9163-2BB81CA279CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{258B0BE0-D4AA-4A93-9163-2BB81CA279CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{258B0BE0-D4AA-4A93-9163-2BB81CA279CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{258B0BE0-D4AA-4A93-9163-2BB81CA279CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,5 +95,9 @@ Global
 		{ECC89F55-1AC4-408B-BA80-F9009A32B128} = {79590C4C-F8D9-48C3-B29E-92BCE4D44FA2}
 		{02A72AE2-A9E0-459E-94AE-102FCE67E537} = {57ADC367-81F9-4F30-9C2B-489207276267}
 		{44D371F5-D248-4823-A682-F16D640B918F} = {79590C4C-F8D9-48C3-B29E-92BCE4D44FA2}
+		{696F9E35-A677-4090-A1DC-7B103A6CD5CF} = {57ADC367-81F9-4F30-9C2B-489207276267}
+		{32505B5A-9A0D-46CF-B3B8-8E40023BF3DC} = {57ADC367-81F9-4F30-9C2B-489207276267}
+		{F69874DD-D80E-4777-9CC6-2A6D9DD78E2D} = {57ADC367-81F9-4F30-9C2B-489207276267}
+		{258B0BE0-D4AA-4A93-9163-2BB81CA279CC} = {57ADC367-81F9-4F30-9C2B-489207276267}
 	EndGlobalSection
 EndGlobal

@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapter\ITypeAdapter.cs" />
+    <Compile Include="Adapter\TypeAdapter.cs" />
     <Compile Include="Caching\CacheManager.cs" />
     <Compile Include="Caching\ICache.cs" />
     <Compile Include="DisposableObject.cs" />
